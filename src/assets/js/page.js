@@ -215,7 +215,7 @@ __webpack_require__(9);
   page.defaults = {
     googleApiKey:       null,
     googleAnalyticsKey: null,
-    reCaptchaSiteKey:   null,
+    reCaptchaSiteKey:   '6LcmirwUAAAAAHnZ7XuIbPGUlqkLw4GI7em7l5jA',
     reCaptchaLanguage:  null,
     disableAOSonMobile: false,
     smoothScroll:       false,
