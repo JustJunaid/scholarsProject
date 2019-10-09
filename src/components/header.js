@@ -9,25 +9,28 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-dark">
+        <div className="container">
+
+          <div className="navbar-left">
+            <button className="navbar-toggler" type="button"><span className="navbar-toggler-icon"></span></button>
+            <a className="navbar-brand" href="#">
+              <img className="logo-dark" src="../assets/img/logo-dark.png" alt="logo" />
+              <img className="logo-light" src="../assets/img/logo-light.png" alt="logo" />
+            </a>
+          </div>
+
+          <section className="navbar-mobile">
+            <nav className="nav nav-navbar ml-auto">
+              <a className="nav-link active" href="#">Home</a>
+              <a className="nav-link" href="#">Features</a>
+              <a className="nav-link" href="#">Pricing</a>
+              <a className="nav-link" href="#">Contact</a>
+            </nav>
+          </section>
+
+        </div>
+      </nav>
   </header>
 )
 

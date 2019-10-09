@@ -23,14 +23,6 @@ const Layout = ({ children }) => {
     }
   `)
 
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "../assets/js/page.js";
-  //   script.async = true;
-  //   document.body.appendChild(script);
-  //   console.log('document.body.script', document.body)
-  // }, [])
-
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -44,9 +36,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          @copyright
         </footer>
       </div>
     </>

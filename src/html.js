@@ -1,5 +1,4 @@
 import React from "react"
-// import PropTypes from "prop-types"
 
 export default class HTML extends React.Component {
   render() {
@@ -12,8 +11,6 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <link rel="stylesheet" href="/assets/css/page.min.css"/>
-          <link rel="stylesheet" href="/assets/css/style.min.css"/>
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
@@ -25,8 +22,6 @@ export default class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
           
-          <script src="/assets/js/page.js" async defer></script>
-          <script src="/assets/js/script.js" async defer></script>
         </body>
       </html>
     )
